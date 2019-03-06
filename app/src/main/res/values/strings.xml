@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Soundmind</string>
+    <string name="logo_description">Secondary Logo</string>
+
+    <string name="view_todo">View To-Do Lists: </string>
+
+    <string name="daily_button">DAILY</string>
+    <string name="weekly_button">WEEKLY/BIWEEKLY</string>
+    <string name="monthly_button">MONTHLY/QUARTERLY</string>
+    <string name="annually_button">SEMIANNUALLY/ANNUALLY</string>
+
+
 </resources>
