@@ -8,6 +8,27 @@
     <string name="weekly_button">WEEKLY/BIWEEKLY</string>
     <string name="monthly_button">MONTHLY/QUARTERLY</string>
     <string name="annually_button">SEMIANNUALLY/ANNUALLY</string>
+    <string name="monthly_todo"> MONTHLY TODO LIST</string>
+    <string name="home_planner">MONTHLY HOME PLANNER</string>
+    <string name="products_to_buy">PRODUCTS TO BUY</string>
+    <string name="monthly_reflection">MONTHLY REFLECTION</string>
+    <string name="product_hint">Clorox Wipes</string>
+    <string name="reflection_hint">I feel like...</string>
+
+    <array name="month_options">
+        <item name="January">JANUARY</item>
+        <item name="February">FEBRUARY</item>
+        <item name="March">MARCH</item>
+        <item name="April">APRIL</item>
+        <item name="May">MAY</item>
+        <item name="June">JUNE</item>
+        <item name="July">JULY</item>
+        <item name="August">AUGUST</item>
+        <item name="September">SEPTEMBER</item>
+        <item name="October">OCTOBER</item>
+        <item name="November">NOVEMBER</item>
+        <item name="December">DECEMBER</item>
+    </array>
 
 
 </resources>
