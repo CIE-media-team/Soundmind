@@ -11,11 +11,11 @@
         android:id="@+id/month_select"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:entries="@array/month_options"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:popupBackground="@color/blush" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/home_planner"
@@ -42,6 +42,35 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/home_planner" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/blush"
+        android:onClick="onClickAddToDo"
+        android:text="@string/add"
+        android:textSize='12sp'
+        app:layout_constraintEnd_toStartOf="@id/editButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthly_todo_title" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/blush"
+        android:onClick="onClickAddToDo"
+        android:text="@string/edit"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addButton"
+        app:layout_constraintEnd_toStartOf="@+id/center_vertical"
+        app:layout_constraintStart_toEndOf="@+id/addButton"
+        app:layout_constraintTop_toTopOf="@+id/addButton" />
 
     <TextView
         android:id="@+id/products_title"
@@ -73,18 +102,6 @@
         android:orientation="vertical"
         app:layout_constraintGuide_begin="203dp" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:clickable="true"
-        android:onClick="onClickAddToDo"
-        app:backgroundTint="@color/mustard"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_add" />
 
     <EditText
         android:id="@+id/products_list"
@@ -111,6 +128,20 @@
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/center_vertical"
         app:layout_constraintTop_toBottomOf="@+id/reflection_title" />
+
+    <LinearLayout
+        android:id="@+id/monthly_todo_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/addButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/center_vertical"
+        tools:layout_editor_absoluteX="8dp">
+
+
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>

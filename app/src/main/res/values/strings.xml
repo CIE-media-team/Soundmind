@@ -14,8 +14,12 @@
     <string name="monthly_reflection">MONTHLY REFLECTION</string>
     <string name="product_hint">Clorox Wipes</string>
     <string name="reflection_hint">I feel like...</string>
+    <string name="delete">DELETE</string>
+    <string name="add">ADD</string>
+    <string name="edit">EDIT</string>
 
     <array name="month_options">
+        <item name="Select Month">SELECT MONTH</item>
         <item name="January">JANUARY</item>
         <item name="February">FEBRUARY</item>
         <item name="March">MARCH</item>
