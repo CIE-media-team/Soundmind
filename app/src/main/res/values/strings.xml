@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Soundmind</string>
+    <string name="app_name">Organize with SoundMind</string>
     <string name="logo_description">Secondary Logo</string>
 
     <string name="view_todo">View To-Do Lists: </string>
