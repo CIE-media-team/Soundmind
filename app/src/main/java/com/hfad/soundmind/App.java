@@ -37,22 +37,25 @@ public class App extends Application {
         // Get the wrapper (Box) for the Book table that lets us store Book objects
         Box<Calendar> calendarBox = boxStore.boxFor(Calendar.class);
 
+
+
         // Initialize with some data
         if (calendarBox.count() == 0) {
-            int i=2030;
+            int i = 2030;
             List<Calendar> initialCalendars = new ArrayList<>();
-            while(i>2018) {
-                for(String month : months) {
+            while (i > 2018) {
+                for (String month : months) {
                     initialCalendars.add(new Calendar(month, i, "", "", ""));
-                    i--;
                 }
+                i--;
             }
+
 
             // ObjectBox is smart enough to handle CRUD on Collections of entities
             calendarBox.put(initialCalendars);
+
         }
     }
-
     public BoxStore getBoxStore() {
         return boxStore;
     }

@@ -46,6 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@color/mustard"
+        android:onClick="onClickDaily"
         android:text="@string/daily_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
