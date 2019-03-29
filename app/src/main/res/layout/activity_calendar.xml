@@ -17,8 +17,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:entries="@array/month_options"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"/>
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toStartOf="@id/year_select"/>
+
+    <Spinner
+        android:id="@+id/year_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/month_select"
+        app:layout_constraintStart_toEndOf="@+id/month_select"
+        app:layout_constraintTop_toTopOf="@+id/month_select"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -151,10 +164,7 @@
         app:layout_constraintTop_toBottomOf="@+id/addButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="@id/center_vertical"
-        tools:layout_editor_absoluteX="8dp">
-
-
-    </LinearLayout>
+        tools:layout_editor_absoluteX="8dp"/>
 
 
 
