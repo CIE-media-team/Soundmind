@@ -20,7 +20,7 @@
         android:entries="@array/month_options"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
-        app:layout_constraintEnd_toStartOf="@id/year_select"/>
+        app:layout_constraintEnd_toStartOf="@id/year_select" />
 
     <Spinner
         android:id="@+id/year_select"
@@ -56,116 +56,136 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/month_select" />
 
-    <TextView
-        android:id="@+id/monthly_todo_title"
-        android:layout_width="wrap_content"
-        android:layout_height="16dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:fontFamily="@font/montserrat"
-        android:text="@string/monthly_todo"
-        android:textColor="@color/mustard"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/home_planner" />
-
-    <Button
-        android:id="@+id/addButton"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@color/blush"
-        android:onClick="onClickAddToDo"
-        android:text="@string/add"
-        android:textSize='12sp'
-        app:layout_constraintEnd_toStartOf="@id/editButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/monthly_todo_title" />
-
-    <Button
-        android:id="@+id/editButton"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/blush"
-        android:onClick="onClickAddToDo"
-        android:text="@string/edit"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/addButton"
-        app:layout_constraintEnd_toStartOf="@+id/center_vertical"
-        app:layout_constraintStart_toEndOf="@+id/addButton"
-        app:layout_constraintTop_toTopOf="@+id/addButton" />
-
-    <TextView
-        android:id="@+id/products_title"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:text="@string/products_to_buy"
-        android:textColor="@color/mustard"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/center_vertical"
-        app:layout_constraintTop_toTopOf="@+id/monthly_todo_title" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView2">
 
-    <TextView
-        android:id="@+id/reflection_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:fontFamily="@font/montserrat"
-        android:text="@string/monthly_reflection"
-        android:textColor="@color/mustard"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/center_vertical"
-        app:layout_constraintTop_toBottomOf="@+id/products_list" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/home_planner" >
 
-    <android.support.constraint.Guideline
-        android:id="@+id/center_vertical"
+            <TextView
+                android:id="@+id/monthly_todo_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/monthly_todo"
+                android:textColor="@color/mustard"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+                <Button
+                    android:id="@+id/addButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/blush"
+                    android:onClick="onClickAddToDo"
+                    android:text="@string/add"
+                    android:textSize='12sp' />
+
+                <LinearLayout
+                    android:id="@+id/monthly_todo_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    tools:layout_editor_absoluteX="8dp"/>
+
+
+            <TextView
+                android:id="@+id/products_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/products_to_buy"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/mustard"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/products_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/product_hint"
+                android:inputType="textMultiLine"
+                android:textSize="12sp"
+                android:focusableInTouchMode="true"
+                android:scrollbars="vertical"
+                />
+
+                <TextView
+                    android:id="@+id/reflection_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/monthly_reflection"
+                    android:textColor="@color/mustard"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+
+            <EditText
+                android:id="@+id/monthly_reflection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/reflection_hint"
+                android:inputType="textMultiLine"
+                android:textSize="12sp"
+                android:scrollbars="vertical"
+                android:focusableInTouchMode="true"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="203dp" />
-
-
-    <EditText
-        android:id="@+id/products_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/product_hint"
-        android:inputType="textMultiLine"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/center_vertical"
-        app:layout_constraintTop_toBottomOf="@+id/products_title" />
-
-    <EditText
-        android:id="@+id/monthly_reflection"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/reflection_hint"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textMultiLine"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/center_vertical"
-        app:layout_constraintTop_toBottomOf="@+id/reflection_title" />
-
-    <LinearLayout
-        android:id="@+id/monthly_todo_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/addButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/center_vertical"
-        tools:layout_editor_absoluteX="8dp"/>
-
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:itemBackground="@color/navy"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/navigation"/>
 
 
 </android.support.constraint.ConstraintLayout>

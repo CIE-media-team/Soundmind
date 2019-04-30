@@ -2,12 +2,12 @@
     <string name="app_name">Organize with SoundMind</string>
     <string name="logo_description">Secondary Logo</string>
 
-    <string name="view_todo">View To-Do Lists: </string>
+    <string name="view_todo">My To-Do List: </string>
 
-    <string name="daily_button">DAILY</string>
-    <string name="weekly_button">WEEKLY/BIWEEKLY</string>
-    <string name="monthly_button">MONTHLY/QUARTERLY</string>
-    <string name="annually_button">SEMIANNUALLY/ANNUALLY</string>
+
+
+    <string name="monthly_title">MONTHLY/QUARTERLY</string>
+    <string name="annually_title">SEMIANNUALLY/ANNUALLY</string>
     <string name="monthly_todo"> MONTHLY TODO LIST</string>
     <string name="home_planner">MONTHLY HOME PLANNER</string>
     <string name="products_to_buy">PRODUCTS TO BUY</string>
@@ -32,6 +32,42 @@
         <item name="November">NOVEMBER</item>
         <item name="December">DECEMBER</item>
     </array>
+
+    <string name="daily_title">DAILY</string>
+    <string name = "daily_description"> Your daily to-do list is all about maintaining your space and keeping all of your most-used areas in
+decent condition. These to-dos should also take you the least amount of time to complete; therefore,
+giving you more time to focus on your day. Even though this list is pretty light, it is important to stay
+on top of it because we all know piled up dishes and cluttered surfaces are a PAIN to clean once they
+have gotten out of control. Also, if you are anything like me, I like to keep my house at a certain level
+of cleanliness that allows me to not have to scramble to straighten up when company comes over. If
+you identify with me (which I am sure you do), try your hardest to keep up with this list at least 5 days
+out of the week. </string>
+    <string name="daily_todo_list"> DAILY TO-DO LIST: </string>
+    <array name="daily_things">
+        <item name="1">Wash dishes</item>
+        <item name="2">Put away dirty clothes</item>
+        <item name="3">Declutter/wipe down kitchen and bathroom surfaces </item>
+    </array>
+
+    <string name="weekly_title">WEEKLY/BIWEEKLY</string>
+    <string name = "weekly_description"> Your weekly and biweekly to-do lists focus more on sanitation. No, you do not have to complete them as
+frequently as your dailies, BUT they should be tackled regularly to maintain a sanitized home. </string>
+    <string name="weekly_todo_list"> WEEKLY TO-DO LIST: </string>
+    <array name="weekly_things">
+        <item name="1">Clean out refrigerator and food pantry</item>
+        <item name="2">Laundry</item>
+        <item name="3">Sweep/mop/vacuum floors</item>
+        <item name="4">Change bed linens</item>
+    </array>
+    <string name="biweekly_todo_list"> BIWEEKLY TO-DO LIST: </string>
+    <array name="biweekly_things">
+        <item name="1">Deep clean bathroom</item>
+        <item name="2">Dust commonly used surfaces</item>
+        <item name="3">Lightly spray curtains and throw pillows with fabric refresher </item>
+    </array>
+
+
+
 
 
 </resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_guides"
+        android:icon="@drawable/ic_dehaze"
+        android:title="GUIDES"/>
+
+    <item
+        android:id="@+id/navigation_home_todo"
+        android:icon="@drawable/ic_todo_list"
+        android:title="My To-Do"/>
+
+    <item
+        android:id="@+id/navigation_calendar"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="My Calendar"/>
+
+</menu>
